@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import Logging
+import LoggingRenamed
 
 public extension Error {
     var logMessage: Logger.Message {

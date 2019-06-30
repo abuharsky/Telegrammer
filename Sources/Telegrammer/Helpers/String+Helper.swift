@@ -75,7 +75,7 @@ public extension String {
     }
 }
 
-import Logging
+import LoggingRenamed
 
 public extension String {
     var logMessage: Logger.Message {
