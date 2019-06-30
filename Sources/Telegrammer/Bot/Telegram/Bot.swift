@@ -7,7 +7,7 @@
 
 import Foundation
 import HTTP
-import Logging
+import LoggingRenamed
 
 public final class Bot: BotProtocol {
 

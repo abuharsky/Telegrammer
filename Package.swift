@@ -16,12 +16,12 @@ let package = Package(
         .package(url: "https://github.com/vapor/http.git", from: "3.0.0"),
         .package(url: "https://github.com/vapor/crypto.git", from: "3.1.0"),
         .package(url: "https://github.com/vapor/multipart.git", from: "3.0.0"),
-        .package(url: "https://github.com/apple/swift-log.git", from: "1.0.0"),
+        .package(url: "https://github.com/abuharsky/swift-log.git", from: "1.1.0"),
     ],
     targets: [
         .target(
             name: "Telegrammer",
-            dependencies: ["HTTP", "Multipart", "Crypto", "Logging"]),
+            dependencies: ["HTTP", "Multipart", "Crypto", "LoggingRenamed"]),
         .target(name: "EchoBot", dependencies: ["Telegrammer"]),
         .target(name: "HelloBot", dependencies: ["Telegrammer"]),
         .target(name: "SchedulerBot", dependencies: ["Telegrammer"]),
